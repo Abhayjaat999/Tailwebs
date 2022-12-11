@@ -18,7 +18,7 @@ const isValidPass = function (value) {
 const isValidName = function (value) {
     if (typeof value === "undefined" || value === null || value == " ")
         return false;
-    if (typeof value === "string" && value.trim().length > 0 && value.match(/^[a-zA-Z]*$/))
+    if (typeof value === "string" && value.trim().length > 0 && value.match(/^[a-zA-Z ]*$/))
         return true;
     return false;
 }
